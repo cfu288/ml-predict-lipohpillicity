@@ -12,16 +12,19 @@ ML methods to predict lipophillicity
 
 #### Objectives
 - To experiment with different ml toolkits like sci-kit learn and tensorflow+keras on this lipophillicity dataset.
+- I hope to answer a few research questions found below:
+  - Can we predict lipophillicity values of molecules given their structure?
+    - Can we use molecular fingerprints as a way to encode structure for this task?
+      - Which type of fingerprint performs best?
+          - Linear regression
+          - SVM with different kernels
+          - NN
+    - Is extracting the molecule descriptors of the molecules more effective than using fingerprints?
+  - Which machine learning models work best for this task?
+  - Does the similarity of a target molecule to the training set affect its abiliy to be accurately predicted?
 
-#### Things to explore
-Preprocessing Strategies:
-- Fingerprinting
-- Extract molecule descriptors
-
-Algorithms to test:
-- Linear regression
-- SVM with different kernels
-- NN
+#### Notebooks
+- main.ipynb: General exploration to see if we can predict lipophillicity values of molecules given a molecular fingerprint
 
 #### Conda/environment setup
 
@@ -32,5 +35,3 @@ Algorithms to test:
 `conda install jupyter-notebook pandas scikit-learn keras tensorflow xlrd`
 
 `jupyter-notebook`
-
-Current main notebook is main.ipynb
