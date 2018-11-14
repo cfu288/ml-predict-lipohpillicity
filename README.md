@@ -16,6 +16,7 @@ ML methods to predict lipophillicity
   - Can we predict lipophillicity values of molecules given their structure?
     - Can we use molecular fingerprints as a way to encode structure for this task?
       - Which type of fingerprint performs best?
+      - Which model performs best?
           - Linear regression
           - SVM with different kernels
           - NN
@@ -24,7 +25,8 @@ ML methods to predict lipophillicity
   - Does the similarity of a target molecule to the training set affect its abiliy to be accurately predicted?
 
 #### Notebooks
-- main.ipynb: General exploration to see if we can predict lipophillicity values of molecules given a molecular fingerprint
+- 1_main.ipynb: General exploration to see if we can predict lipophillicity values of molecules given a molecular fingerprint
+- 2_PCA.ipynb: Experimenting with PCA for speeding up training time/visualizations
 
 #### Conda/environment setup
 
