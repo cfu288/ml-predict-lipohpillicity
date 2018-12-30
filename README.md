@@ -25,9 +25,32 @@ ML methods to predict lipophillicity
   - Does the similarity of a target molecule to the training set affect its abiliy to be accurately predicted?
 
 #### Notebooks
-- 1_main.ipynb: General exploration to see if we can predict lipophillicity values of molecules given a molecular fingerprint
+- 1_main.ipynb: General exploration to see if we can predict lipophillicity values of molecules given a molecular fingerprint, try to perform regressions using SKlearn on molecular data
 - 2_PCA.ipynb: Experimenting with PCA for speeding up training time/visualizations
+- 3_NN.ipynb: Experimenting with a neural network regression model using Keras and Tensorflow
 
+#### (Tentative) Results and Conclusions
+- Lasso : 
+    - r^2: 0.738
+    - RMSE: 0.863
+- Ridge :
+    - r^2: 0.774
+    - RMSE: 0.802
+- SVR : 
+    - r^2: 0.790
+    - RMSE: 0.772
+    - Notes: This model seemed to strongly overfit
+- SVR + PCA:
+    - r^2: 0.786
+    - RMSE: 0.780
+    - Notes: PCA seemed to help with the overfitting problem
+- RF : 
+    - r^2: 0.700
+    - RMSE: 0.923
+- NN:
+    - r^2: -
+    - RMSE: 0.968
+    
 #### Conda/environment setup
 
 `conda create -c rdkit -n rdkit-env rdkit python=3.6`
